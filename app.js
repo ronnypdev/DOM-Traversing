@@ -19,3 +19,8 @@ console.log(hobbitsChildren);
 const merryTheHobbit = hobbits.querySelectorAll('li');
 const merry = merryTheHobbit[2];
 console.log(merry);
+
+// The Enemies
+const sauron = document.querySelector('li');
+const enemies = sauron.parentElement;
+console.log(enemies);
