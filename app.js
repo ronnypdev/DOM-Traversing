@@ -21,6 +21,14 @@ const merry = merryTheHobbit[2];
 console.log(merry);
 
 // The Enemies
+
+// Select .enemies from sauron
 const sauron = document.querySelector('li');
 const enemies = sauron.parentElement;
 console.log(enemies);
+
+// Select the .characters div from Nazgûl
+const nazgûl = document.querySelectorAll('li')[1];
+const enemiesList = nazgûl.parentElement;
+const enemiesParent = enemiesList.parentElement;
+console.log(enemiesParent);
