@@ -24,7 +24,7 @@ console.log(merry);
 
 // Select .enemies from sauron
 const sauron = document.querySelector('li');
-const enemies = sauron.parentElement;
+const enemies = sauron.closest('.enemies');
 console.log(enemies);
 
 // Select the .characters div from Nazgûl
@@ -32,3 +32,21 @@ const nazgûl = document.querySelectorAll('li')[1];
 const enemiesList = nazgûl.parentElement;
 const enemiesParent = enemiesList.parentElement;
 console.log(enemiesParent);
+
+// The elves
+
+const elves = document.querySelector('.elves');
+const elvesItems = elves.querySelectorAll('li');
+
+// Select Elrond from Glorfindel
+const elrond = elvesItems[1].nextElementSibling;
+console.log(elrond);
+
+// Select legolas from Glorfindel
+const legolas = elvesItems[1].previousElementSibling;
+console.log(legolas);
+
+const glorfindelParent = elvesItems[1].parentElement;
+const glorfindelSiblings = glorfindelParent.children;
+const glorfindel = glorfindelSiblings[3];
+console.log(glorfindel);
